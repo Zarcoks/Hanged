@@ -55,7 +55,7 @@ def game_start():
         print("A toi de jouer, balance une lettre !")
         guess = input("--> ")
         print()
-        guess.lower()
+        guess = guess.lower()
         while not(guess in "abcdefghijklmnopqrstuvxyzéèïêîùà") and len(guess) != 1:
             print("Erreur :p")
             guess = input("reessaye --> ")
